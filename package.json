@@ -1,7 +1,7 @@
 {
   "name": "modules-template-internal",
   "version": "1.0.0",
-  "description": "Developer template to create an internal module.",
+  "description": "A developer template to create internal, no-gui modules.",
   "author": "aarontburn",
   "scripts": {
     "build": "tsc && node copyFiles.js --submodule && npm run dev_export",
