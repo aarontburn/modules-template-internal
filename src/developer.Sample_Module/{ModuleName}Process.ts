@@ -24,7 +24,6 @@ export class SampleModuleProcess extends Process {
      */
     public initialize(): void {
         super.initialize(); // This should be called.
-
     }
 
 
