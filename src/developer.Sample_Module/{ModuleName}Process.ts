@@ -1,8 +1,4 @@
-import { Process } from "module_builder/Process"
-import { IPCCallback } from "module_builder/IPCObjects";
-import { Setting } from "module_builder/Setting";
-import { BooleanSetting, ChoiceSetting, HexColorSetting, NumberSetting, StringSetting } from "module_builder/settings/types";
-
+import { Process, IPCCallback, Setting } from "@nexus/nexus-module-builder"
 
 
 export class SampleModuleProcess extends Process {
@@ -24,8 +20,7 @@ export class SampleModuleProcess extends Process {
     }
 
     /**
-     *  The entry point of the module. Will be called once the 
-     *      renderer sends the 'init' signal.
+     *  The entry point of the module.
      */
     public initialize(): void {
         super.initialize(); // This should be called.
