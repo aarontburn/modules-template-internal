@@ -10,6 +10,7 @@ module.exports = {
     excluded: ["electron.ts"],
     included: [],
     build: {
+        name: "Sample Internal Module",
         id: "developer.Sample_Internal_Module",
         process: "./process/main",
         replace: [
@@ -20,8 +21,8 @@ module.exports = {
             },
             {
                 from: "{EXPORTED_MODULE_NAME}",
-                to: "Sample Internal Module",
-                at: ["./process/main.ts"]
+                to: "%name%",
+                at: ["./process/main.ts", "./module-info.json"]
             }
         ]
     }
