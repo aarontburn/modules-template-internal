@@ -1,7 +1,8 @@
 import { Process, IPCCallback, Setting } from "@nexus/nexus-module-builder"
 
-const MODULE_NAME: string = "Sample Internal Module";
-const MODULE_ID: string = "developer.Sample_Internal_Module";
+const MODULE_NAME: string = "{EXPORTED_MODULE_NAME}";
+const MODULE_ID: string = "{EXPORTED_MODULE_ID}";
+
 
 export default class SampleModuleProcess extends Process {
 
