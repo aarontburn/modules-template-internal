@@ -11,6 +11,6 @@ module.exports = {
     included: [],
     build: {
         id: "developer.Sample_React_Module",
-        process: "./main"
+        process: "./process/main"
     }
 }
