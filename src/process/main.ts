@@ -1,23 +1,17 @@
 import { Process, IPCCallback, Setting } from "@nexus/nexus-module-builder"
 
+const MODULE_NAME: string = "Sample Internal Module";
+const MODULE_ID: string = "developer.Sample_Internal_Module";
 
 export default class SampleModuleProcess extends Process {
 
-    private static readonly MODULE_NAME: string = "Sample Internal Module";
-    private static readonly MODULE_ID: string = "developer.Sample_Internal_Module";
 
     /**
      *  The constructor. Should not directly be called, 
      *      and should not contain logic relevant to the renderer.
      */
     public constructor(ipcCallback: IPCCallback) {
-        super(
-            SampleModuleProcess.MODULE_ID,
-            SampleModuleProcess.MODULE_NAME,
-            undefined,
-            ipcCallback);
-
-
+        super(MODULE_ID, MODULE_NAME, undefined, ipcCallback);
     }
 
     /**
@@ -25,7 +19,6 @@ export default class SampleModuleProcess extends Process {
      */
     public initialize(): void {
         super.initialize(); // This should be called.
-
     }
 
 
