@@ -1,18 +1,18 @@
-import { Process, IPCCallback, Setting } from "@nexus/nexus-module-builder"
+import { Process, Setting } from "@nexus/nexus-module-builder"
 
 const MODULE_NAME: string = "{EXPORTED_MODULE_NAME}";
 const MODULE_ID: string = "{EXPORTED_MODULE_ID}";
 
 
-export default class SampleModuleProcess extends Process {
+export default class SampleProcess extends Process {
 
 
     /**
      *  The constructor. Should not directly be called, 
      *      and should not contain logic relevant to the renderer.
      */
-    public constructor(ipcCallback: IPCCallback) {
-        super(MODULE_ID, MODULE_NAME, undefined, ipcCallback);
+    public constructor() {
+        super(MODULE_ID, MODULE_NAME, undefined);
     }
 
     /**
@@ -29,9 +29,6 @@ export default class SampleModuleProcess extends Process {
 
 
     public refreshSettings(modifiedSetting: Setting<unknown>): void {
-        if (modifiedSetting.getAccessID() === 'sample_bool') {
-
-        }
     }
 
     public async handleEvent(eventType: string, data: any[]): Promise<any> {
