@@ -1,8 +1,9 @@
 import { Process, Setting } from "@nexus/nexus-module-builder"
 
-const MODULE_NAME: string = "{EXPORTED_MODULE_NAME}";
+// These is replaced to the ID specified in export-config.js during export. DO NOT MODIFY.
 const MODULE_ID: string = "{EXPORTED_MODULE_ID}";
-
+const MODULE_NAME: string = "{EXPORTED_MODULE_NAME}";
+// ---------------------------------------------------
 
 export default class SampleProcess extends Process {
 
