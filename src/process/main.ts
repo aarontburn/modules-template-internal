@@ -21,6 +21,7 @@ export default class SampleProcess extends Process {
      */
     public initialize(): void {
         super.initialize(); // This should be called.
+        console.log(MODULE_ID + " initialized.");
     }
 
 
