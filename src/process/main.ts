@@ -33,12 +33,4 @@ export default class SampleProcess extends Process {
     public refreshSettings(modifiedSetting: Setting<unknown>): void {
     }
 
-    public async handleEvent(eventType: string, data: any[]): Promise<any> {
-        switch (eventType) {
-            default: {
-                console.log(`Unhandled event: type: ${eventType} | data: ${data}`);
-            }
-        }
-    }
-
 }
