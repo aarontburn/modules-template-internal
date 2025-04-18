@@ -22,8 +22,8 @@ export default class SampleProcess extends Process {
     /**
      *  The entry point of the module.
      */
-    public initialize(): void {
-        super.initialize(); // This should be called.
+    public async initialize(): Promise<void> {
+        await super.initialize(); // This should be called.
         console.log(MODULE_ID + " initialized.");
     }
 
@@ -33,7 +33,7 @@ export default class SampleProcess extends Process {
     }
 
 
-    public refreshSettings(modifiedSetting: Setting<unknown>): void {
+    public async onSettingModified(modifiedSetting: Setting<unknown>): Promise<void> {
     }
 
 }
