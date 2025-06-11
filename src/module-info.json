@@ -4,10 +4,10 @@
     "author": "developer",
     "version": "1.0.0",
     "description": "A developer template to create a internal, no-gui module for Nexus.",
-    "build-version": 1,
-    "platforms": [],
+    "platforms": ["win32", "linux", "darwin"],
     "link": "https://github.com/aarontburn/nexus-template-internal",
     "build": {
+        "build-version": 1,
         "excluded": [
             "electron.ts"
         ],
